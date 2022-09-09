@@ -1,4 +1,4 @@
-type Estudante = {
+export type Estudante = {
     id: string,
     nome: string,
     email: string,
@@ -6,4 +6,7 @@ type Estudante = {
     turma_id: string
 }
 
-export default Estudante
+export type Hobbies = {
+    hobbies: string,
+    estudante_id: string
+}
