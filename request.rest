@@ -21,3 +21,12 @@ Content-Type: application/json
     "aluno_id": "1662732881038",
     "turma_id": "011"
 }
+
+###
+
+POST http://localhost:3003/criar-turma
+Content-Type: application/json
+
+{
+    "nome":"Silva"
+}
