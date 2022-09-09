@@ -1,6 +1,26 @@
 POST http://localhost:3003/estudante
 Content-Type: application/json
 
+{ 
+"nome": "Gabriel", 
+"email": "gabriel@labenu.com", 
+"data_nasc": "2020-01-01", 
+"turma_id": "014"
+}
+
+###
+
+GET http://localhost:3003/estudante
+
+###
+
+PUT http://localhost:3003/estudante
+Content-Type: application/json
+
+{
+    "aluno_id": "1662732881038",
+    "turma_id": "011"
+}
 
 ###
 
