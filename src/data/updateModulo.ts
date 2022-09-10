@@ -1,7 +1,14 @@
 import { connection } from "../data/connection";
 
-export async function updateModulo(idTurma: string, modulo: string): Promise<void> {
-    await connection("turma")
-    .where("id", `${idTurma}`)
-    .update({ modulo })
+export async function updateModulo(id: string, modulo: string): Promise<void> {
+    try {
+        await connection("turma")
+        .update({ modulo: modulo })
+        .where({id})
+
+    } catch (error: any) {
+        console.log(error)
+        throw new Error(`Um erro inesperado aconteceu :/.`)
+    }
+    
 }
