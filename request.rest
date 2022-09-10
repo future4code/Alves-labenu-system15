@@ -6,8 +6,8 @@ POST http://localhost:3003/estudante
 Content-Type: application/json
 
 { 
-"nome": "teste8", 
-"email": "teste8@labenu.com", 
+"nome": "teste12", 
+"email": "teste12@labenu.com", 
 "data_nasc": "2020-01-01", 
 "turma_id": "012", 
 "hobbies": "Assistir filmes"
@@ -19,8 +19,8 @@ PUT http://localhost:3003/estudante
 Content-Type: application/json
 
 {
-    "aluno_id": "1662732881038",
-    "turma_id": "015"
+    "aluno_id": "1662820282938",
+    "turma_id": "014"
 }
 
 ###

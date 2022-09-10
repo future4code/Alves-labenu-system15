@@ -1,14 +1,13 @@
 import app from "./app";
-import createEstudante from "./endpoints/estudante/createEstudante";
 import createTurma from "./endpoints/createTurma";
 import getTurma from "./endpoints/getTurma";
 import putModulo from "./endpoints/putModulo";
-import getEstudante from "./endpoints/estudante/getEstudante";
-import putEstudante from "./endpoints/estudante/putEstudante";
 import createDocente from "./endpoints/docente/createDocente";
 import getDocentes from "./endpoints/docente/getDocente";
 import putDocente from "./endpoints/docente/putDocente";
+import EstudanteController from "./endpoints/estudante/estudanteController";
 
+const estudanteController = new EstudanteController()
 
 app.get("/selecionar-turmas",getTurma)
 
@@ -16,11 +15,11 @@ app.post('/criar-turma',createTurma)
 
 app.put("/mudanca-modulo",putModulo)
 
-app.get("/estudante", getEstudante)
+app.get("/estudante", estudanteController.getEstudante)
 
-app.post("/estudante", createEstudante)
+app.post("/estudante", estudanteController.createEstudante)
 
-app.put("/estudante", putEstudante)
+app.put("/estudante", estudanteController.putEstudanteTurma)
 
 app.get("/docentes", getDocentes)
 
