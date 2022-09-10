@@ -30,3 +30,20 @@ Content-Type: application/json
 {
     "nome":"Silva"
 }
+
+###
+
+GET http://localhost:3003/selecionar-turmas
+
+###
+
+Put http://localhost:3003/mudanca-modulo
+Content-Type: application/json
+
+{
+    {
+    "idTurma":"014",
+    "modulo":"2"
+}
+
+}
