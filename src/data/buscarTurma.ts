@@ -2,10 +2,8 @@ import { TurmaBancoDeDados,tipageTurma} from "../types/turma";
 import { connection } from "../data/connection";
 
 export async function buscarTurmas(): Promise<TurmaBancoDeDados[] | undefined> {
-    const result = await connection()
+    const result = await connection("turma")
     .select("*")
-    .from("turma")
-    .where("modulo", "like", "%*%")
 
     if (result) {
         const tipoTurma = result.map((turma) => {
