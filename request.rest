@@ -34,6 +34,19 @@ Content-Type: application/json
 
 ###
 
+GET http://localhost:3003/selecionar-turmas
+
+###
+
+Put http://localhost:3003/mudanca-modulo
+Content-Type: application/json
+
+{
+    {
+    "idTurma":"014",
+    "modulo":"2"
+}
+
 POST http://localhost:3003/docente
 Content-Type: application/json
 
@@ -57,4 +70,5 @@ Content-Type: application/json
 {
     "docente_id": "1662749381908",
     "turma_id": "014"
+
 }
