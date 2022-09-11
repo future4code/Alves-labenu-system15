@@ -5,7 +5,6 @@ import connection from "../connection"
 
 class EstudanteData extends BaseDataBase{
     async insertEstudante(estudante: Estudante, hobbies: Hobbies): Promise<void>{
-        console.log("insertEstudante",estudante)
         try {
             await this.getConnection()("estudante")
                 .insert(estudante)
@@ -14,7 +13,6 @@ class EstudanteData extends BaseDataBase{
                 .insert(hobbies)
     
         } catch (error: any) {
-            console.log(error)
             throw new Error(
                 `Ocorreu um erro com a inserção de dados, verifique os dados enviados e tente novamente.`)
         }
@@ -34,7 +32,6 @@ class EstudanteData extends BaseDataBase{
 
     async updateEstudante(id: string, turma_id: string): Promise<void> {
         try {
-            console.log(id, turma_id)
             await connection("estudante")
                 .update({ turma_id: turma_id })
                 .where({ id })
