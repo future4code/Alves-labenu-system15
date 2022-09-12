@@ -6,8 +6,8 @@ POST http://localhost:3003/estudante
 Content-Type: application/json
 
 { 
-"nome": "teste12", 
-"email": "teste12@labenu.com", 
+"nome": "teste13", 
+"email": "teste13@labenu.com", 
 "data_nasc": "2020-01-01", 
 "turma_id": "012", 
 "hobbies": "Assistir filmes"
@@ -33,7 +33,7 @@ POST http://localhost:3003/criar-turma
 Content-Type: application/json
 
 {
-    "nome":"Queiroz"
+    "nome":"teste POO"
 }
 
 ###
@@ -43,12 +43,12 @@ Content-Type: application/json
 
 {
     "idTurma": "012",
-    "modulo": "8"
+    "modulo": "3"
 }
 
 ###
 
-GET http://localhost:3003/docentes?nome=
+GET http://localhost:3003/docentes?nome=c
 
 ###
 
@@ -56,11 +56,11 @@ POST http://localhost:3003/docente
 Content-Type: application/json
 
 { 
-"nome": "teste9", 
-"email": "teste9@labenu.com", 
+"nome": "teste13", 
+"email": "teste13@labenu.com", 
 "data_nasc": "2020-01-01", 
 "turma_id": "011", 
-"habilidades": "React"
+"habilidades": "CSS"
 }
 
 ###
